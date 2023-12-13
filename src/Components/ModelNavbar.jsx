@@ -5,7 +5,11 @@ import { CiChat2 } from "react-icons/ci";
 
 export default function ModelNavbar({ data }) {
   return (
-    <Flex justifyContent="space-around" alignItems="center" width="100%">
+    <Flex
+      justifyContent="space-around"
+      alignItems="center"
+      width="100%"
+      bg={"white"}>
       <Flex
         flexDirection="column"
         alignItems="center"

@@ -4,16 +4,15 @@ function HomeModal() {
   return (
     <Box>
       <Box
-        borderTopLeftRadius={"20px"}
         bgSize="cover"
         bgPosition="center"
         bgRepeat="no-repeat"
-        h="250px"
-        bgGradient="linear(to-r,rgb(19,66,144),rgb(9,77,202),rgb(25,106,254))"
+        h="280px"
         width="100%"
         p={6}
         margin="auto">
         <Box
+          mb={28}
           display={"flex"}
           justifyContent={"space-between"}
           alignItems={"center"}
@@ -45,7 +44,7 @@ function HomeModal() {
             />
           </Box>
         </Box>
-        <Box mt={16} fontSize={"25px"}>
+        <Box fontSize={"25px"}>
           <Text color={"rgb(180,203,246)"}>Hello there.</Text>
           <Text color={"rgb(255,255,255)"}>How can we help?</Text>
         </Box>
@@ -59,7 +58,7 @@ function HomeModal() {
               alt=""
             />
             <Divider></Divider>
-            <Box mt={4} p={6}>
+            <Box p={6} _hover={{ bg: "rgb(207,234,252)" }}>
               <Text color={"rgb(4,21,59)"} fontWeight={700}>
                 The Intercom Community
               </Text>
@@ -78,7 +77,7 @@ function HomeModal() {
               alt=""
             />
             <Divider></Divider>
-            <Box mt={4} p={6}>
+            <Box p={6} _hover={{ bg: "rgb(207,234,252)" }}>
               <Text color={"rgb(4,21,59)"} fontWeight={700}>
                 Future-Proofing Businesses with Modern Customer Engagement
               </Text>

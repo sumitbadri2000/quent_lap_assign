@@ -12,10 +12,8 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
+import "../index.css";
 import { BiSolidMessage } from "react-icons/bi";
-import { PiArticle } from "react-icons/pi";
-import { GoHome } from "react-icons/go";
-import { CiChat2 } from "react-icons/ci";
 import HomeModal from "./ModalHome";
 import { useState } from "react";
 import ModelNavbar from "./ModelNavbar";
@@ -41,8 +39,13 @@ function MesModal() {
   };
   return (
     <>
-      <Button onClick={onOpen} borderRadius={"30px"} bg={"rgb(0,87,255)"}>
-        <BiSolidMessage fontSize={"30px"} color="white" />
+      <Button
+        onClick={onOpen}
+        _hover={{ bg: "blue" }}
+        borderRadius={"30px"}
+        bg={"rgb(0,87,255)"}
+        height={"60px"}>
+        <BiSolidMessage fontSize={"32px"} color="white" />
       </Button>
 
       <Modal
@@ -57,12 +60,17 @@ function MesModal() {
             left: "70%",
             top: "-5%",
             transform: "translate(-50%, -50%)",
+            background: "linear-gradient(to bottom, #2463eb, #f5ece3)",
           }}>
           <ModalCloseButton />
-          <ModalBody p={0} overflowY="auto">
+          <ModalBody
+            className="hide-scrollbar"
+            style={{
+              overflowY: "auto",
+            }}>
             {check()}
           </ModalBody>
-          <ModalFooter px={6} py={4}>
+          <ModalFooter px={6} py={4} bg={"white"} borderBottomRadius={20}>
             <ModelNavbar data={handleChange} />
           </ModalFooter>
         </ModalContent>

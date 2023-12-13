@@ -14,5 +14,13 @@ code {
 
 /* ::-webkit-scrollbar {
   border-radius: 12px;
-  display: block;
 } */
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

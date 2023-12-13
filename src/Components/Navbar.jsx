@@ -13,17 +13,9 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  InputGroup,
-  InputLeftElement,
-  Input,
   Image,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  SearchIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -80,7 +72,7 @@ export default function Navbar() {
           <Button
             display={{ base: "none", md: "inline-flex" }}
             color={"white"}
-            fontSize={"sm"}
+            fontSize={"16px"}
             fontWeight={700}
             variant={"ghost"}
             href={"#"}
@@ -93,7 +85,7 @@ export default function Navbar() {
           </Button>
           <Button
             display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
+            fontSize={"16px"}
             fontWeight={700}
             color={"white"}
             variant={"outline"}
@@ -130,7 +122,7 @@ const DesktopNav = () => {
                 p={2}
                 href={navItem.href ?? "#"}
                 fontSize={"16px"}
-                fontWeight={500}
+                fontWeight={"bolder"}
                 color={"white"}>
                 {navItem.label}
               </Box>

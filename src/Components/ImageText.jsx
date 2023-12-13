@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import MesModal from "./Modal";
 
 export default function ImagewithText() {
@@ -22,16 +14,15 @@ export default function ImagewithText() {
         textAlign="center"
         width="100%"
         margin="auto">
-        <Flex
-          width={"55%"}
-          margin={"auto"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          gap={50}>
-          <Heading fontSize={"65px"} color={"rgb(242,243,244)"}>
+        <Flex flexDirection={"column"} alignItems={"center"} gap={50}>
+          <Heading
+            width={"78%"}
+            fontFamily={"Georgia, seri"}
+            fontSize={"70px"}
+            color={"rgb(242,243,244)"}>
             The only AI customer service solution you need
           </Heading>
-          <Text fontSize={"30px"} color={"rgb(199,202,206)"}>
+          <Text width={"62%"} fontSize={"25px"} color={"rgb(199,202,206)"}>
             The only solution that combines an AI chatbot, help desk, and
             proactive support—so you can keep costs low, support teams happy,
             and customers satisfied.
@@ -40,7 +31,7 @@ export default function ImagewithText() {
             <Button
               display={{ base: "none", md: "inline-flex" }}
               color={"white"}
-              fontSize={"sm"}
+              fontSize={"16px"}
               fontWeight={700}
               variant={"ghost"}
               href={"#"}
@@ -53,7 +44,7 @@ export default function ImagewithText() {
             </Button>
             <Button
               display={{ base: "none", md: "inline-flex" }}
-              fontSize={"sm"}
+              fontSize={"16px"}
               fontWeight={700}
               color={"white"}
               variant={"outline"}
@@ -71,7 +62,7 @@ export default function ImagewithText() {
           </Stack>
         </Flex>
       </Box>
-      <Box position={"absolute"} zIndex={1} right={"50px"} bottom={"120px"}>
+      <Box position={"absolute"} zIndex={1} right={"50px"} bottom={"175px"}>
         <MesModal />
       </Box>
     </Box>
